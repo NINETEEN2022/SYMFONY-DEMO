@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <form action="">
+        <input type="text" name=text">
+        <button type="submit" name="clic">Validation</button>
+    </form>
+    {# pour accéder à l'objet Request depuis un template #}
+    {{ dump( app.getRequest().getMethod() ) }}
+    {# en notation courte : #}
+    {{ dump(app.request.method) }}
+{% endblock %}
+
+
+
